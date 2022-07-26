@@ -1,6 +1,6 @@
 # Website-Portfolio
 
-Projeto desenvolvido em contexto academico, com utilização das tecnologias ReactJS, Redux (estes dois primeiros para a construção do dashboard do administrador do sistema), Javascript, HTML5, CSS3, Java 11, REST, JPA, WebSockets, CDI, Internacionalização e de Unit Testing (JUnit e Mockito). Foram utilizadas ainda as ferramentas/frameworks : API CRITERIA, i18n.
+Projeto desenvolvido em contexto academico, com utilização das tecnologias ReactJS, Redux (estes dois primeiros para a construção do dashboard do administrador do sistema), Javascript, HTML5, CSS3, Java 11, REST, JPA, WebSockets, CDI, Internacionalização e de Unit Testing (JUnit e Mockito). Foram utilizadas ainda as ferramentas/frameworks : API CRITERIA, i18n. Desenvolvido através da IDE ECLIPSE e com utilização de Maven.
 
 O projeto teve como objetivo criar um website que sirva de portfolio e expositor de uma organização. O website deve permitir a utilizadores criar e expor projectos bem como criar notícias que possam estar relacionadas com os projetos. Foram ainda solicitados, 7 testes unitários de software recorrendo ao JUnit e Mockito para garantir o correto funcionamento do sistema, sendo de livre escolha do aluno quais seriam as funcionalidades a serem testadas.
 
