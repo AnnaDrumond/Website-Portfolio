@@ -1,0 +1,140 @@
+body {
+    background-color: #282e34;
+    color: azure;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    /* color: rgb(81, 80, 150); */
+  }
+  
+  /*code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }*/
+  
+  .card{
+    background: whitesmoke;
+    box-shadow: 10px 5px 5px  gray;
+    color: #666666;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-bottom: 50px;
+  }
+  
+  .generalCards{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cardItem {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #tituloDasboard{
+    justify-content: center;
+    text-align: center; 
+    margin-bottom: 100px;
+  }
+  
+  .dashboardContainer{
+    padding-top: 110px;
+    margin-right: 20px;
+  }
+
+  .nav-bar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+  }
+  
+  /* Nova classe a ser atribuída ao elemento com os estilos desejados */
+  .changeStyle {
+    background-color: whitesmoke;
+    box-shadow: 0 0 1em gray;
+  }
+  
+  .nav-bar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    transition: background-color 0.3s ease-in-out; /* ainda não funciona */
+  }
+  
+  .nav-bar-item {
+    float: left;
+  }
+
+
+  
+  .button-navbar {
+    border: none;
+    color: grey;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: transparent;
+    /* padding: 14px 16px; */
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  
+  .button-navbar:hover {
+    background-color: #6666661f;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  /* Mecanismo de busca */
+  #search {
+    margin-top: 9px;
+  }
+
+  /* Seletor de idiomas (li) */
+  .nav-bar-item-languages {
+    margin-top: 10px;
+    right: 1px;
+    margin-left: 50px;
+  }
+  
+  .buttons-nav-bar {
+    /*margin: 10px;*/
+    background-color: transparent;
+  }
+  
+  .languages {
+    border: transparent;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    color: #666666;
+  }
+  
+  .nav-bar-item label {
+    margin-left: 65px;
+    margin-bottom: -200px;
+  }
+  
+  #input-search {
+    border: 3px ridge rgba(80, 80, 80, 0.6);
+    font-size: 16px;
+    background-color: transparent;
+    margin-left: 10px;
+    margin-top: -150px;
+  }
+
+  
