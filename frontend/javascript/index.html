@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="home">Home</title>
+    <!-- <link rel="icon" type="image/png" href="./images/logo-uc.png" /> -->
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/6c109bd4c4.js"
+      crossorigin="anonymous"
+    ></script>
+    
+  </head>
+  <body>
+    <scroll-container>
+      <!-- Menu superior -->
+      <nav class="nav-bar">
+        <ul class="nav-bar-list changeStyle" id="nav-bar-list-id">
+          <!-- Primeiro item (Home) -->
+          <div id="buttons-nav-bar">
+
+          <li class="nav-bar-item">
+            <i class="fa-solid fa-house" aria-hidden="true" id="icon-home"></i>
+            <button
+            class="button-navbar"
+            onclick="window.location.href='#scroll-page0'"
+            data-i18n="home"
+          >INICIO</button>
+          </li>
+
+          <!-- Segundo item (Projetos) -->
+          <li class="nav-bar-item">
+            <i class="fa-solid fa-bars-progress" aria-hidden="true"></i>
+            <button
+            class="button-navbar"
+            data-i18n="projects"
+            id="nav-bar-project"
+          >
+            PROJETOS
+          </button>
+          </li>
+       
+
+           <!-- Terceiro item (noticias) -->
+           <li class="nav-bar-item">
+            <i class="fa-solid fa-newspaper" aria-hidden="true"></i>
+            <button
+                class="button-navbar"
+                onclick="window.location.href='#scroll-page1'"
+                data-i18n="news"
+              >
+                NOTÍCIAS
+              </button>
+          </li>
+
+          <!-- quarto item (Quem somos) -->
+          <li class="nav-bar-item">
+            <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+            <button
+            class="button-navbar"
+            onclick="window.location.href='#scroll-page2'"
+            data-i18n="team"
+          >
+           NOSSA
+            EQUIPA
+          </button>
+          </li>
+
+          <!-- quinto item (registo) -->
+          <li class="nav-bar-item">
+            <i class="fa-solid fa-user-plus" aria-hidden="true"></i
+              >
+            <button
+            class="button-navbar"
+            onclick="window.location.href='#scroll-page3'"
+            data-i18n="registration"
+          >
+           REGISTE-SE
+          </button>
+          </li>
+
+          <!-- sexto item (login) -->
+          <li class="nav-bar-item">
+            <i class="fa-solid fa-right-to-bracket" aria-hidden="true"></i
+              >
+            <button
+                class="button-navbar"
+                onclick="window.location.href='#scroll-page4'"
+                data-i18n="login"
+              >
+               ENTRAR
+              </button>
+          </li>
+        </div> 
+
+          <!-- sétimo item (barra de pesquisa) -->
+          <li class="nav-bar-item">
+            <div id="search">
+              <label data-i18n="searchNewsByKeyword">Buscar notícia:</label>
+              <input id="input-search" type="text" />
+              <i
+                type="button"
+                class="fa-solid fa-magnifying-glass"
+                id="button-search"
+                onclick=""
+              ></i>
+            </div>
+          </li>
+
+          <!-- oitavo item (idiomas) -->
+          <li class="nav-bar-item" id="nav-bar-item-languages">
+            <div class="div-languages">
+              <select name="languages" id="languages">
+                <option id="pt" class="option-language">PT</option>
+                <option id="en" class="option-language">EN</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Primeira imagem grande -->
+      <scroll-page id="scroll-page0">
+        <div class="imagem1">
+          <div class="description">
+            <span class="border" data-i18n="title1"> Casas do futuro </span>
+          </div>
+        </div>
+      </scroll-page>
+
+      <!-- Primeira seção de texto -->
+      <scroll-page id="scroll-page1">
+        <div class="outher-section">
+          <h2 class="section-title" data-i18n="news">Notícias</h2>
+          <section class="section section-light" id="section-news">
+            <!-- <div id="container-news"> -->
+                <!-- aqui entram as NOTICIAS geradas dinamicamente pelo javaScript  -->
+            <!-- </div>    -->
+          </section>
+        </div>
+      </scroll-page>
+
+      <!-- Segunda imagem grande -->
+      <div class="imagem2">
+        <div class="description">
+          <span class="border transparent"
+          data-i18n="title2"><strong>Sustentabilidade</strong></span
+          >
+        </div>
+      </div>
+
+      <!-- Segunda seção de texto -->
+      <scroll-page id="scroll-page2">
+        <div class="outher-section">
+          <h2 class="section-title" data-i18n="team">Quem somos</h2>
+          <section class="section section-light"  id="section-members">
+           
+             <!-- aqui entram os USERS gerados dinamicamente pelo javaScript  -->
+            
+          </section>
+        </div>
+      </scroll-page>
+
+      <!-- Terceira imagem grande -->
+      <div class="imagem3">
+        <div class="description">
+          <div class="border transparent" data-i18n="title3"><strong>Inovação</strong></div>
+        </div>
+      </div>
+
+      <!-- Terceira seção de texto - registo -->
+      <scroll-page id="scroll-page3">
+        <section class="section section-dark">
+          <h2 data-i18n="registrationLowerCase">Registo</h2>
+          <!-- Mensagem a ser exibida dinamicamente em caso de erro -->
+          <p class="mensagemErroRegisto"></p>
+            <!-- Mensagem a ser exibida dinamicamente em caso de sucesso -->
+            <p class="mensagemSucessoRegisto"></p>
+            <p class="mensagemCamposVazios"></p>
+          <form action="#" class="register" onsubmit="event.preventDefault();">
+            
+           <div>
+            <label data-i18n="firstName" class="label-register">Primeiro Nome:</label>  
+            <input class="form-item" type="text" id="firstName-form"/>
+           </div>
+            
+          <div>
+            <label data-i18n="lastName" class="label-register">Último Nome:</label>
+            <input class="form-item" type="text" id="lastName-form"/>
+          </div>
+
+          <div>
+            <label  class="label-register">Username:</label>
+            <input class="form-item" type="text" id="username-form" />
+          </div>
+            
+          <div>
+            <label data-i18n="password" class="label-register">Palavra-passe:</label>
+            <input
+            class="form-item"
+            type="password"
+            name="password"
+            id="password-form"
+          />
+          </div>
+
+          <div>
+            <label  class="label-register">E-mail:</label>
+            <input
+            class="form-item"
+            type="email"
+            name="email"
+            id="email-form"
+           
+          />
+          </div>
+
+          <div>
+            <label data-i18n="photo" class="label-register">URI foto:</label>
+            <input
+            class="form-item"
+            type="url"
+            name="photo"
+            id="photo-form"
+          />
+          </div>        
+            <button class="button-register-user" id="register-user"  data-i18n="registrationLowerCase">Registar</button>
+          </form>
+        </section>
+      </scroll-page>
+
+      <!-- Penultima imagem grande -->
+      <div class="imagem4">
+        <div class="description">
+          <div class="border" data-i18n="title4">Amigas da Natureza</div>
+        </div>
+      </div>
+
+      <!-- Última seção de texto - login -->
+      <scroll-page id="scroll-page4">
+        <section class="section section-dark">
+          <h2 data-i18n="loginLowerCase">Login</h2>
+           <!-- Mensagem a ser exibida dinamicamente em caso de erro -->
+           <p class="returnErrorLogin"></p>
+
+          <form class="register" onsubmit="event.preventDefault();">
+
+            <div>
+              <label class="label-login">Username:</label>
+              <input class="form-item" type="text" id="username-login"/>
+            </div>
+           
+            <div>
+              <label data-i18n="password" class="label-register">Palavra-passe:</label>
+              <input
+              class="form-item"
+              type="password"
+              name="password"
+              id="password-login"
+                          /> 
+            </div>
+            <button class="button-login-user" id="login-user" data-i18n="login">Login</button>
+          </form>
+        </section>
+      </scroll-page>
+
+        <!-- Última imagem grande -->
+        <div class="imagem5">
+          <div class="description">
+            <div class="border">informacoes@casasdofuturo.pt</div>
+          </div>
+        </div>
+
+    </scroll-container>
+    <script type="module" src="languageSupport.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="news">Noticias</title>
+    <link rel="stylesheet" media="screen" type="text/css" href="general.css" />
+    <script
+      src="https://kit.fontawesome.com/6c109bd4c4.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+  <body  class="fundo">
+    <div>
+      <nav class="nav-bar">
+        <ul class="nav-bar-list changeStyle" id="nav-bar-list-id">
+          <!-- Primeiro item (Home) -->
+          <div id="buttons-nav-bar">
+
+          <li class="nav-bar-item" id="home-menu">
+            <i class="fa-solid fa-house" aria-hidden="true" id="icon-home"></i>
+            <button
+            class="button-navbar"
+            id="button-nav-bar-home"
+            data-i18n="home"
+          >INICIO</button>
+          </li>
+          <li class="nav-bar-item" id="back-menu">
+            <i class="fa-solid fa-arrow-left" aria-hidden="true" id="icon-seta"></i>
+            <button
+            class="button-navbar"
+            id="button-nav-bar-back" 
+            data-i18n="return"    
+          >VOLTAR</button>
+          </li>
+        </div>
+
+          <!-- oitavo item (idiomas) -->
+          <li class="nav-bar-item" id="nav-bar-item-languages">
+            <div class="div-languages">
+              <select name="languages" id="languages">
+                <option id="pt" class="option-language">PT</option>
+                <option id="en" class="option-language">EN</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-section" id="details-news-page">
+        <section class="section section-light" id="section-news-details">
+              <!-- aqui a noticia e seus detalhes por meio do javascript  -->  
+        </section>
+
+        <div class="cardX">
+          <h5 data-i18n="lastUpdate" class="h5LastUpdate">Última atualização:</h5>
+          <p id="lastUpdateP"></p>
+          <h5 data-i18n="newsCreator" class="h5creatorNews">Criador da Notícia:</h5>
+          <p id="creatorName"></p>
+        </div>
+
+        <div class="cardY">
+          <h5 data-i18n="newsTeam" class="h5TeamNews">Equipa envolvida:</h5>
+
+        </div>
+
+
+        <div class="cardZ">
+          <h5 data-i18n="newsAssociatedProjects" id="h5AssociatedNews">Projetos Associados:</h5>
+          <section class="section section-light" id="section-projects-news">
+            <!-- aqui a noticia e seus detalhes  -->  
+          </section>
+        </div>
+
+       
+        <!-- <div class="cardK"> -->
+        <h5 data-i18n="keyWordsNews" id="h5AssociatedProjects">Palavras-chave associadas:</h5>
+        <section class="section section-light" id="section-keywords-news">
+          <!-- aqui a noticia e seus detalhes  -->  
+        </section>
+     
+     
+      <!-- </div> -->
+        <section class="section section-light" id="section-add-member-news">
+          <!--  XXXXXXXXXXXXXXXXXXXXXXXXX  -->  
+        </section>
+      <!-- </div> -->
+
+
+      </div>
+    </div>
+    <script type="module" src="languageSupport.js"></script>
+    <script type="module" src="newsPage.js"></script>
+  </body>
+</html>

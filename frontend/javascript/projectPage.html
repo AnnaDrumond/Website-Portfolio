@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="projects">Projetos</title>
+    <link rel="stylesheet" media="screen" type="text/css" href="general.css" />
+    <script
+      src="https://kit.fontawesome.com/6c109bd4c4.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+  <body class="fundo">
+    <div >
+      <nav class="nav-bar">
+        <ul class="nav-bar-list changeStyle" id="nav-bar-list-id">
+          <!-- Primeiro item (Home) -->
+          <div id="buttons-nav-bar">
+
+          <li class="nav-bar-item" id="home-menu">
+            <i class="fa-solid fa-house" aria-hidden="true" id="icon-home"></i>
+            <button
+            class="button-navbar"
+            id="button-nav-bar-home"
+            data-i18n="home"
+          >INICIO</button>
+          </li>
+        </div>
+
+        <li class="nav-bar-item" id="back-menu">
+          <i class="fa-solid fa-arrow-left" aria-hidden="true" id="icon-seta"></i>
+          <button
+          class="button-navbar"
+          id="button-nav-bar-back" 
+          data-i18n="return"    
+        >VOLTAR</button>
+        </li>
+    
+
+         <!-- Segundo item (Projetos) -->
+         <li class="nav-bar-item">
+          <i class="fa-solid fa-bars-progress" aria-hidden="true"></i>
+          <button
+          class="button-navbar"
+          data-i18n="projects"
+          id="nav-bar-project"
+        >
+          PROJETOS
+        </button>
+        </li>
+
+          <!-- oitavo item (idiomas) -->
+          <li class="nav-bar-item" id="nav-bar-item-languages">
+            <div class="div-languages">
+              <select name="languages" id="languages">
+                <option id="pt" class="option-language">PT</option>
+                <option id="en" class="option-language">EN</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="outher-page">
+        <section class="section section-light" id="section-project-details">
+              <!-- aqui a noticia e seus detalhes por meio do javascript  -->  
+        </section>
+
+        <div class="cardX">
+          <h5 data-i18n="lastUpdate" class="h5LastUpdate">Última atualização:</h5>
+          <p id="lastUpdateP2"></p>
+          <h5 data-i18n="projectCreator" class="h5creatorNews">Criador do Projeto:</h5>
+          <p id="creatorNameP2"></p>
+        </div>
+
+        <div class="cardY">
+          <h5 data-i18n="newsTeam" class="h5TeamNews">Equipa envolvida:</h5>
+
+        </div>
+
+
+        <div class="cardZ">
+          <h5 data-i18n="projectsAssociatedWithNews" id="h5AssociatedProjects">Noticias Associadas:</h5>
+          <section class="section section-light" id="section-news-project">
+            <!-- aqui o projeto e seus detalhes  -->  
+          </section>
+        </div>
+
+        <!-- <div class="cardK"> -->
+        <h5 data-i18n="keyWordsNews" id="hAssociatedNews">Palavras-chave associadas:</h5>
+        <section class="section section-light" id="section-keywords-project">
+          <!--  XXXXXXXXXXXXXXXXXXXXXXXXX  -->  
+        </section>
+      <!-- </div> -->
+        <section class="section section-light" id="section-add-member">
+          <!--  XXXXXXXXXXXXXXXXXXXXXXXXX  -->  
+        </section>
+      <!-- </div> -->
+
+
+      </div>
+    </div>
+    <script type="module" src="languageSupport.js"></script>
+    <script type="module" src="projectPage.js"></script>
+  </body>
+</html>

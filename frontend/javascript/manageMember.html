@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title data-i18n="news">Noticias</title>
+        <link rel="stylesheet" media="screen" type="text/css" href="general.css" />
+        <script
+          src="https://kit.fontawesome.com/6c109bd4c4.js"
+          crossorigin="anonymous"
+        ></script>
+    
+      </head>
+<body>
+    <div class="fundo">
+    <nav class="nav-bar">
+        <ul class="nav-bar-list changeStyle" id="nav-bar-list-id">
+          <!-- Primeiro item (Home) -->
+          <div id="buttons-nav-bar">
+
+          <!-- Segundo item (Projetos) -->
+          <li class="nav-bar-item" id="back-menu">
+            <i class="fa-solid fa-arrow-left" aria-hidden="true" id="icon-seta"></i>
+            <button
+            class="button-navbar"
+            id="button-nav-bar-back" 
+            data-i18n="return"    
+          >VOLTAR</button>
+          </li>
+          
+          <li class="nav-bar-item">
+            <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i
+              >
+            <button
+            class="button-navbar"
+            data-i18n="logout"
+            id="button-nav-bar-logout"
+          >
+           SAIR
+          </button>
+      
+
+          <!-- oitavo item (idiomas) -->
+          <li class="nav-bar-item" id="nav-bar-item-languages">
+            <div class="div-languages">
+              <select name="languages" id="languages">
+                <option id="pt" class="option-language">PT</option>
+                <option id="en" class="option-language">EN</option>
+              </select>
+            </div>
+          </li>
+        </div> 
+        </ul>
+      </nav>
+      <div class="outher-section">
+        <h2 id="title-visitors" data-i18n="title5">Visitantes com pedido de aprovação pendente</h2>
+           <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+      <p class="mensagemErro"></p>
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+        <section class="section section-light" id="section-visitors">
+            <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  -->    
+        </section>
+        <h2 id="title-members" data-i18n="title6">Gerenciar equipa da Organização</h2>
+        <section class="section section-light" id="section-members">
+             <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  -->   
+        </section>
+    </div> 
+    <script type="module" src="languageSupport.js"></script>
+    <script type="module" src="manageMember.js"></script>
+</div> 
+</body>
+</html>

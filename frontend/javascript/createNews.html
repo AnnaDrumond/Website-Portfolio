@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title data-i18n="createNews">Criar Noticia</title>
+        <link rel="stylesheet" media="screen" type="text/css" href="general.css" />
+        <script
+          src="https://kit.fontawesome.com/6c109bd4c4.js"
+          crossorigin="anonymous"
+        ></script>
+    
+      </head>
+<body class="fundo">
+    <div >
+    <nav class="nav-bar">
+        <ul class="nav-bar-list changeStyle" id="nav-bar-list-id">
+          <!-- Primeiro item (Home) -->
+          <div id="buttons-nav-bar">
+
+            <li class="nav-bar-item" id="back-menu">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true" id="icon-seta"></i>
+                <button
+                class="button-navbar"
+                id="button-nav-bar-back"
+                data-i18n="return"     
+              >VOLTAR</button>
+              </li>
+  
+          <li class="nav-bar-item">
+            <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i
+              >
+            <button
+            class="button-navbar"
+            data-i18n="logout"
+            id="button-nav-bar-logout"
+          >
+           SAIR
+          </button>
+          </li>
+        
+          <!-- oitavo item (idiomas) -->
+          <li class="nav-bar-item" id="nav-bar-item-languages">
+            <div class="div-languages">
+              <select name="languages" id="languages">
+                <option id="pt" class="option-language">PT</option>
+                <option id="en" class="option-language">EN</option>
+              </select>
+            </div>
+          </li>
+        </div> 
+        </ul>
+      </nav>
+      <div class="outher-section">
+        <section class="section section-dark">
+            <h2  data-i18n="createNews" id="title-create-page">CRIAR NOTICIA</h2>
+            <p class="mensagemSucessoCreate"></p>
+            <p class="mensagemCamposVazios"></p>
+            <p class="mensagemErro"></p>
+            <!-- Mensagem a ser exibida dinamicamente em caso de erro -->
+              <p class="mensagemSameKey"></p>
+              <p class="mensagemSameMember"></p>
+            <form action="#" class="register" onsubmit="event.preventDefault();">
+            <div id="container">
+            <div id="cardOne">
+                <div>
+                    <label  class="label-register" data-i18n="title">Titulo:</label>  
+                    <input class="form-item" type="text" id="title-form"/>
+                   </div>
+                    
+                  <div>
+                    <label class="label-register" data-i18n="coverImage">Foto de capa:</label>
+                    <input class="form-item" type="text" id="photo-content-form"/>
+                  </div>
+        
+                  <div>
+                    <label  class="label-register" data-i18n="description">Descrição:</label>
+                    <textarea class="form-item" id="text-area-form"></textarea>
+                  </div>
+      
+                  <div>
+                      <label  class="form-item" data-i18n="visibility">Visibilidade do Conteúdo</label> <select  class="form-item" id="comboBoxStatus">
+                          <option data-i18n="options">Escolha a opção</option>
+                          <option data-i18n="visible">VISIVEL</option>
+                          <option data-i18n="unvisible">INVISIVEL</option>
+                          <option data-i18n="off">APAGADO</option>
+                      </select>
+                  </div> 
+            </div>
+           
+            <div id="cardTwo">
+                <div id="section-key">
+                    <label  class="label-register" data-i18n="insertKey2">Inserir palavra-chave:</label>
+                    <input
+                    class="form-item"
+                    id="keyword-form"
+                  />
+                  <section id="keyword-create">
+                      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+                  </section>
+                  <button class="button-key" id="add-keyword"  data-i18n="add">Adicionar</button>
+                  </div>
+        
+                  <div>
+                    <!-- <label  class="label-register" id = "label-username-create" data-i18n="addMember">Username do membro a associar:</label> -->
+                    <!-- <input class="form-item" id="member-form"/> -->
+                    <div id="comboBoxUsernames">
+                      <label  class="form-item" data-i18n="addMember2">Associar membros</label> 
+                      <select  class="form-item" id="comboBoxUsername">   
+                        <option data-i18n="choice">Escolher</option>
+                        <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+                      </select>
+                  </div> 
+                  <section id="member-create">
+                    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+                </section>
+                  <button class="button-key" id="create-add-member" data-i18n="connect">Associar</button>
+                 
+                  </div>
+                <button class="button-create" id="create-content" data-i18n="create">Criar</button>
+                  
+            </div>
+        </div>
+            </form>
+          </section>
+        </div>
+              <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  -->
+        
+      
+    </div> 
+    <script type="module" src="languageSupport.js"></script>
+    <script type="module" src="createNews.js"></script>
+
+</body>
+</html>

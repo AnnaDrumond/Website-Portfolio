@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="projects">Projetos</title>
+    <link rel="stylesheet" media="screen" type="text/css" href="general.css" />
+    <script
+      src="https://kit.fontawesome.com/6c109bd4c4.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+  <body>
+    <div class="fundo">
+      <nav class="nav-bar">
+        <ul class="nav-bar-list changeStyle" id="nav-bar-list-id">
+          <!-- Primeiro item (Home) -->
+          <div id="buttons-nav-bar">
+
+          <li class="nav-bar-item">
+            <i class="fa-solid fa-house" aria-hidden="true" id="icon-home"></i>
+            <button
+            class="button-navbar"
+            id="button-nav-bar-home"
+            data-i18n="home"
+          >INICIO</button>
+          </li>
+        </div>
+
+          <!-- sétimo item (barra de pesquisa) -->
+          <li class="nav-bar-item">
+            <div id="search">
+              <label data-i18n="searchNewsByKeyword">Buscar notícia:</label>
+              <input id="input-search" type="text" />
+              <i
+                type="button"
+                class="fa-solid fa-magnifying-glass"
+                id="button-search"
+                onclick=""
+              ></i>
+            </div>
+          </li>
+
+          <!-- oitavo item (idiomas) -->
+          <li class="nav-bar-item" id="nav-bar-item-languages">
+            <div class="div-languages">
+              <select name="languages" id="languages">
+                <option id="pt" class="option-language">PT</option>
+                <option id="en" class="option-language">EN</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="outher-section">
+        <h2 class="title-projects-visible" data-i18n="projectsLowerCase">Projetos</h2>
+        <section class="section section-light" id="section-projects">
+        
+              <!-- aqui entram os PROJETOS gerados dinamicamente pelo javaScript  -->
+        
+        </section>
+      </div>
+    </div>
+    <script type="module" src="languageSupport.js"></script>
+    <script type="module" src="publicProjects.js"></script>
+  </body>
+</html>

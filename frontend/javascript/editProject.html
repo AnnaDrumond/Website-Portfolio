@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title data-i18n="editProject">Editar Noticia</title>
+        <link rel="stylesheet" media="screen" type="text/css" href="general.css" />
+        <script
+          src="https://kit.fontawesome.com/6c109bd4c4.js"
+          crossorigin="anonymous"
+        ></script>
+    
+      </head>
+<body class="fundo">
+<div >
+    <nav class="nav-bar">
+        <ul class="nav-bar-list changeStyle" id="nav-bar-list-id">
+          <!-- Primeiro item (Home) -->
+          <div id="buttons-nav-bar">
+
+            <li class="nav-bar-item" id="back-menu">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true" id="icon-seta"></i>
+                <button
+                class="button-navbar"
+                id="button-nav-bar-back"  
+                data-i18n="return"   
+              >VOLTAR</button>
+              </li>
+  
+          <li class="nav-bar-item">
+            <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i
+              >
+            <button
+            class="button-navbar"
+            data-i18n="logout"
+            id="button-nav-bar-logout"
+          >
+           SAIR
+          </button>
+          </li>
+        
+          <!-- oitavo item (idiomas) -->
+          <li class="nav-bar-item" id="nav-bar-item-languages">
+            <div class="div-languages">
+              <select name="languages" id="languages">
+                <option id="pt" class="option-language">PT</option>
+                <option id="en" class="option-language">EN</option>
+              </select>
+            </div>
+          </li>
+        </div> 
+        </ul>
+      </nav>
+
+<div class="outher-section-edit">
+
+  <section class="section section-dark">
+            <h2 data-i18n="EDITProject">EDITAR NOTICIA</h2>
+            <p class="mensagemSucessoEdit"></p>
+            <p class="mensagemCamposVazios"></p>
+            <!-- Mensagem a ser exibida dinamicamente em caso de erro -->
+            <p class="mensagemSameKey"></p>
+            <p class="mensagemSameMember"></p>
+            
+  <form action="#" class="edit" onsubmit="event.preventDefault();">
+      <div id="container-edit">
+                <div class="container-div">
+                    <label  class="label-edit" data-i18n="title">Titulo:</label>  
+                    <input class="form-item" type="text" id="title-form"/>
+                </div>
+                    
+                <div  class="container-div">
+                    <label class="label-edit" data-i18n="coverImage">Foto de capa:</label>
+                    <input class="form-item" type="text" id="photo-content-form"/>
+                </div>
+         
+                <div  class="container-div">
+                  <label  class="label-edit" data-i18n="description">Descrição:</label>
+                  <textarea class="form-item" id="text-area-form"></textarea>
+                </div>
+           
+                <div  class="container-div">
+                  <label id="label-visibility" class="form-item label-edit allert" data-i18n="visibility">Visibilidade do Conteúdo </label> 
+        
+                  <select  class="form-item" id="comboBoxStatus">
+               <!-- XXXXXXXXXXXXXXXXXXXXX opções da combo box XXXXXXXXXXXXXXXXXXXXXXX -->
+                  </select>
+                </div> 
+
+       
+              <div id="comboBoxUsernames"  class="container-div ">
+                <label id="label-member"  class="form-item label-edit" data-i18n="addMember">Associar membro</label> 
+                <section id="members-associated">
+                  <!-- XXXXXXXXXXXXXXXXXXXXXbotões do conteudo associadoXXXXXXXXXXXXXXXXXXXXXXX -->
+            </section>  
+          </div> 
+
+          <div  class="container-div">
+            <section id="member-create">
+              
+              <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+          </section>
+            
+
+          </div>
+           
+          
+            <div id="input-button"  class="container-div">
+              <label  id="label-key"  class="label-edit allert-key" data-i18n="insertKey">Inserir palavra-chave:</label> 
+                <section id="keyword-create">
+                    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+                </section>
+          </div>
+         
+              </div>    
+                <button class="button-create" id="edit-content" data-i18n="save">Guardar</button> 
+              </form> 
+              <hr id="hr-edit">
+
+                <div id="comboBoxAssociar"  class="container-div div-content">
+                  <label  class="form-item label-edit" data-i18n="addnEWS">Associar Projeto</label> 
+                  <section id="associate-content">
+                    <!-- XXXXXXXXXXXXXXXXXXXXXbotões do conteudo associadoXXXXXXXXXXXXXXXXXXXXXXX -->
+                </section> 
+              </div> 
+
+              <div id="comboBoxDesassociar"  class="container-div div-content">
+                      <label class="form-item label-edit"   data-i18n="DisassociatenEWS">Desassociar Projeto</label> 
+                      <section id="dissaciate-content">
+                        <p class="mensagemNoAssociatedMembers"></p>
+                            <!-- XXXXXXXXXXXXXXXXXXXXXbotões do conteudo associadoXXXXXXXXXXXXXXXXXXXXXXX -->
+                      </section>    
+              </div> 
+          
+        </section>      
+      </div>         
+</div>               
+    <script type="module" src="languageSupport.js"></script>
+    <script type="module" src="editProject.js"></script>
+</body>
+</html>

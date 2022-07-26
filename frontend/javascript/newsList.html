@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title data-i18n="news">Noticias</title>
+        <link rel="stylesheet" media="screen" type="text/css" href="general.css" />
+        <script
+          src="https://kit.fontawesome.com/6c109bd4c4.js"
+          crossorigin="anonymous"
+        ></script>
+    
+      </head>
+<body>
+    <div class="fundo">
+    <nav class="nav-bar">
+        <ul class="nav-bar-list changeStyle" id="nav-bar-list-id">
+          <!-- Primeiro item (Home) -->
+          <div id="buttons-nav-bar">
+
+          <!-- Segundo item (Projetos) -->
+
+          <li class="nav-bar-item">
+            <i class="fa-solid fa-user-pen" aria-hidden="true"></i
+              >
+            <button
+            class="button-navbar"
+            data-i18n="editProfile"
+            id="nav-bar-profile"
+          >
+           EDITAR PERFIL
+          </button>
+          </li>
+        
+
+          <li class="nav-bar-item">
+            <i class="fa-solid fa-bars-progress" aria-hidden="true"></i>
+            <button
+            class="button-navbar"
+            data-i18n="createProject"
+            id="nav-bar-project"
+          >
+            CRIAR PROJETO
+          </button>
+          </li>
+       
+
+           <!-- Terceiro item (noticias) -->
+           <li class="nav-bar-item">
+            <i class="fa-solid fa-newspaper" aria-hidden="true"></i>
+            <button
+                class="button-navbar"
+                data-i18n="createNews"
+                id="nav-bar-create-news"
+              >
+                CRIAR NOTICIA
+              </button>
+          </li>
+      <!-- quinto item (registo) -->
+      <li class="nav-bar-item">
+        <i class="fa-solid fa-bars-progress" aria-hidden="true"></i>
+        <button
+        class="button-navbar"
+        data-i18n="projects"
+        id="nav-bar-projectsList"
+      >
+        PROJETOS
+      </button>
+      </li>
+
+          <li class="nav-bar-item">
+            <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i
+              >
+            <button
+            class="button-navbar"
+            data-i18n="logout"
+            id="button-nav-bar-logout"
+          >
+           SAIR
+          </button>
+          </li>
+
+          <li class="nav-bar-item onlyForAdmin">
+            <i class="fa-solid fa-people-group" aria-hidden="true"></i
+              >
+            <button
+            class="button-navbar"
+            data-i18n="manageMembers"
+            id="button-nav-manage-member"
+          >
+           GERIR MEMBROS
+          </button>
+          </li>
+
+          <li class="nav-bar-item onlyForAdmin">
+            <i class="fa-solid fa-chart-line" aria-hidden="true"></i
+              >
+            <button
+            class="button-navbar"
+            data-i18n="dashboard"
+            id="dashboard-nav"
+          >
+           PAINEL DE CONTROLO
+          </button>
+          </li>
+
+          <!-- sétimo item (barra de pesquisa) -->
+          <li class="nav-bar-item">
+            <div id="search">
+              <label data-i18n="searchNewsByKeyword">Buscar notícia:</label>
+              <input id="input-search" type="text" />
+              <i
+                type="button"
+                class="fa-solid fa-magnifying-glass"
+                id="button-search"
+              ></i>
+            </div>
+          </li>
+
+          <!-- oitavo item (idiomas) -->
+          <li class="nav-bar-item" id="nav-bar-item-languages">
+            <div class="div-languages">
+              <select name="languages" id="languages">
+                <option id="pt" class="option-language">PT</option>
+                <option id="en" class="option-language">EN</option>
+              </select>
+            </div>
+          </li>
+        </div> 
+        </ul>
+      </nav>
+      <img id="user-photo"/>
+      <ul id="top-welcome">
+         
+      </ul>
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+      <p class="mensagemErro"></p>
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+      <div class="outher-section"> 
+        <section class="section section-light" id="section-newsNotOff">
+              <!-- aqui entram os news gerados dinamicamente pelo javaScript  -->  
+        </section>
+    </div> 
+    <script type="module" src="languageSupport.js"></script>
+    <!-- <script type="module" src="utilities.js"></script> -->
+    <script type="module" src="newsList.js"></script>
+</div> 
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="editProfile">Editar perfil</title>
+    <link rel="stylesheet" media="screen" type="text/css" href="general.css" />
+    <!-- <link rel="stylesheet" media="screen" type="text/css" href="index.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/6c109bd4c4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div >
+      <nav class="nav-bar">
+          <ul class="nav-bar-list changeStyle" id="nav-bar-list-id">
+            <!-- Primeiro item (Home) -->
+            <div id="buttons-nav-bar">
+  
+              <li class="nav-bar-item" id="back-menu">
+                  <i class="fa-solid fa-arrow-left" aria-hidden="true" id="icon-seta"></i>
+                  <button
+                  class="button-navbar"
+                  id="button-nav-bar-back" 
+                  class="button-navbar"
+              data-i18n="return"    
+                >VOLTAR</button>
+                </li>
+    
+            <li class="nav-bar-item">
+              <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i
+                >
+              <button
+              class="button-navbar"
+              data-i18n="logout"
+              id="button-nav-bar-logout"
+            >
+             SAIR
+            </button>
+            </li>
+          
+            <!-- oitavo item (idiomas) -->
+            <li class="nav-bar-item" id="nav-bar-item-languages">
+              <div class="div-languages">
+                <select name="languages" id="languages">
+                  <option id="pt" class="option-language">PT</option>
+                  <option id="en" class="option-language">EN</option>
+                </select>
+              </div>
+            </li>
+          </div> 
+          </ul>
+        </nav>
+      <section class="section section-edit-profile">
+        <h2 data-i18n="editProfile">Editar Perfil</h2>
+        <p class="mensagemSucesso"></p>
+        <!-- Mensagem a ser exibida dinamicamente em caso de erro -->
+        <p class="mensagemErroRegisto"></p>
+        <!-- Mensagem a ser exibida dinamicamente em caso de sucesso -->
+        <p class="mensagemCamposVazios"></p>
+        <p class="mensagemErro"></p>
+        <form action="#" class="register" id="edit-profile"  onsubmit="event.preventDefault();">
+          <div>
+            <label data-i18n="firstName" class="label-register"
+              >Primeiro Nome:</label
+            >
+            <input class="form-item" type="text" id="firstName-form" />
+          </div>
+
+          <div>
+            <label data-i18n="lastName" class="label-register"
+              >Último Nome:</label
+            >
+            <input class="form-item" type="text" id="lastName-form" />
+          </div>
+
+          <div>
+            <label class="label-register">Username:</label>
+            <input class="form-item" type="text" id="username-form-edit" />
+          </div>
+
+          <div>
+            <label data-i18n="password" class="label-register"
+              >Palavra-passe:</label
+            >
+            <input
+              class="form-item"
+              type="text"
+              name="password"
+              id="password-form-edit"
+            />
+          </div>
+
+          <div>
+            <label class="label-register">E-mail:</label>
+            <input
+              class="form-item"
+              type="email"
+              name="email"
+              id="email-form"
+            />
+          </div>
+
+          <div>
+            <label data-i18n="photo" class="label-register">URI foto:</label>
+            <input class="form-item" type="url" name="photo" id="photo-form" />
+          </div>
+
+          <div>
+            <label data-i18n="biography" class="label-register"
+              >Biografia:</label
+            >
+            <textarea
+              class="form-item"
+              type="url"
+              name="biography"
+              id="biography-form"
+            >
+            </textarea>
+          </div>
+          <div>
+            <button
+              class="button-edit-user"
+              id="edit-user"
+              data-i18n="registrationLowerCase"
+            >
+              Guardar
+            </button>
+          </div>
+        </form>
+      </section>
+      <script type="module" src="languageSupport.js"></script>
+      <script type="module" src="editProfile.js"></script>
+    </div>
+  </body>
+</html>

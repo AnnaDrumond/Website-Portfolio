@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title data-i18n="projects">Projetos</title>
+        <link rel="stylesheet" media="screen" type="text/css" href="general.css" />
+        <script
+          src="https://kit.fontawesome.com/6c109bd4c4.js"
+          crossorigin="anonymous"
+        ></script>
+    
+      </head>
+<body>
+    <div class="fundo">
+        <nav class="nav-bar">
+            <ul class="nav-bar-list changeStyle" id="nav-bar-list-id">
+                <!-- Primeiro item (Home) -->
+                <div id="buttons-nav-bar">
+
+                    <li class="nav-bar-item" id="back-menu">
+                        <i class="fa-solid fa-arrow-left" aria-hidden="true" id="icon-seta"></i>
+                        <button
+                        class="button-navbar"
+                        id="button-nav-bar-back" 
+                        class="button-navbar"
+                    data-i18n="return"    
+                      >VOLTAR</button>
+                      </li>
+          
+                  <li class="nav-bar-item">
+                    <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i
+                      >
+                    <button
+                    class="button-navbar"
+                    data-i18n="logout"
+                    id="button-nav-bar-logout"
+                  >
+                   SAIR
+                  </button>
+                  </li>
+
+                    <!-- sétimo item (barra de pesquisa) -->
+                    <li class="nav-bar-item">
+                        <div id="search">
+                        <label data-i18n="searchNewsByKeyword">Buscar notícia:</label>
+                        <input id="input-search" type="text" />
+                        <i
+                            type="button"
+                            class="fa-solid fa-magnifying-glass"
+                            id="button-search"
+                        ></i>
+                        </div>
+                    </li>
+
+                    <!-- oitavo item (idiomas) -->
+                    <li class="nav-bar-item" id="nav-bar-item-languages">
+                        <div class="div-languages">
+                        <select name="languages" id="languages">
+                            <option id="pt" class="option-language">PT</option>
+                            <option id="en" class="option-language">EN</option>
+                        </select>
+                        </div>
+                    </li>
+                </div> 
+                </ul>
+            </nav>
+     <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+      <p class="mensagemErro"></p>
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+        <div class="outher-section">
+            <h2 data-i18n="projectsList" id="top-projects-list">Lista de Projetos</h2>
+            <section class="section section-light" id="section-projectsNotOff">
+            
+                <!-- aqui entram os PROJETOS gerados dinamicamente pelo javaScript  -->
+            
+            </section>
+        </div> 
+        <script type="module" src="languageSupport.js"></script>
+        <script type="module" src="projectsList.js"></script>
+    </div> 
+</body>
+</html>
